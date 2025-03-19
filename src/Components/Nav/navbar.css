@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --var-main-color: #3fbbc0;
+    --nav-font: "Poppins", sans-serif;
+    --var-default-color: #444444;
+}
+
+/* Top nav */
+.top-nav {
+    background: var(--var-main-color);
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 99px;
+    font-size: 16px;
+    color: white;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+/* Bottom nav */
+.bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 10px 100px;
+    padding: 19px 20px; */
+    background: default;
+    min-height: 60px;
+    padding: 10px 100px;
+
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom-nav .nav-logo img {
+    max-height: 36px;
+}
+
+.bottom-nav ul {
+    display: flex;
+    /* gap: 25px; */
+    list-style: none;
+    text-decoration: none;
+}
+
+.bottom-nav ul li a {
+    color: var(--var-default-color);
+    font-family: var(--nav-font);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    justify-content: space-between;
+    padding: 18px 15px;
+}
+
+.bottom-nav ul li .active {
+    color: var(--var-main-color);
+}
+
+button {
+    max-width: fit-content;
+    background: var(--var-main-color);
+    color: white;
+    border: none;
+    font-size: 14px;
+    padding: 8px 20px;
+    margin: 0 5px 0 30px;
+    border-radius: 4px;
+    font-family: "Roboto", sans-serif;
+}
