@@ -6,10 +6,10 @@ const Navbar = () => {
         <>
             <div className="top-nav">
                 <div className="left">
-                    Monday-Saturday, 8AM to 10PM
+                <i class="fa-regular fa-clock"></i> Monday-Saturday, 8AM to 10PM
                 </div>
                 <div className="right">
-                    Call us now +91 77378 75786
+                <i class="fa-solid fa-mobile-screen-button"></i> Call us now +91 77378 75786
                 </div>
             </div>
             <div className="bottom-nav">
@@ -26,7 +26,9 @@ const Navbar = () => {
                         <li><a href="#dropdown">Dropdown</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
-                    <button>Make an Appointment</button>
+                    <div className="btn">
+                        <a href="">Make an Appointment</a>
+                    </div>
                 </div>
             </div>
         </>

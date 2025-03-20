@@ -4,6 +4,7 @@
     --var-main-color: #3fbbc0;
     --nav-font: "Poppins", sans-serif;
     --var-default-color: #444444;
+    --nav-hover-color: #3fbbc0db;
 }
 
 /* Top nav */
@@ -61,11 +62,16 @@
     padding: 18px 15px;
 }
 
+.bottom-nav ul li a:hover{
+    color: var(--var-main-color);
+    transition: all 0.3s;
+}
+
 .bottom-nav ul li .active {
     color: var(--var-main-color);
 }
 
-button {
+.nav-links .btn a {
     max-width: fit-content;
     background: var(--var-main-color);
     color: white;
@@ -75,4 +81,9 @@ button {
     margin: 0 5px 0 30px;
     border-radius: 4px;
     font-family: "Roboto", sans-serif;
+}
+
+.nav-links .btn a:hover{
+    background: var(--nav-hover-color);
+    color:white;
 }
